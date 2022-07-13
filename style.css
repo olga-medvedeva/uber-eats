@@ -1,0 +1,213 @@
+html {scroll-behavior: smooth;}
+
+body {
+    font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+height: 100%;
+width: 100%;
+background-color: #FFFFFF;
+box-shadow: 0 0 16px 0 rgba(38, 38, 38, 0.16);}
+
+
+header .row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0px 8px;}
+
+.header_logo {
+padding: 25px 0px 25px 0px
+}
+
+.header_logo img {margin-right: 10px;}
+
+.navigation {display: flex;
+align-items: center;}
+
+button {
+font-family: 'Roboto', sans-serif;
+font-size: 13px;
+padding: 12px 23px;
+color: #1D1D1D;
+background-color: #FFFFFF;
+border: 1px solid #E0E0E0;
+border-radius: 4px;
+font-weight: bold;}
+
+button:hover {background-color: #E0E0E0;}
+
+.navigation img {margin-left: 25px;}
+
+.searchbar {width: 100%;
+padding: 50px 0px 40px 0px;}
+
+.search input {width: 100%;
+height: 30px;
+border: none;
+outline: none;
+border-bottom: 1px solid #bababa;
+color: #626262;}
+
+.restorant h1 {font-size: 22px;
+line-height: 34px;
+margin: 20px 0px;}
+
+.restorant .row img {width: 100%;}
+
+.card {margin-bottom: 30px;}
+
+.card a {text-decoration: none;
+color: #1D1D1D;}
+
+.restorant-name {font-size: 16px;
+margin-top: 20px;
+margin-bottom: 13px;}
+
+.restorant-name:hover {color: rgba(29, 29, 29, 0.5);
+transition: .3s;}
+
+.cost {font-size: 14px;
+color: #7d7d7d;}
+
+.waiting-time {font-size: 14px;
+margin-top: 13px;
+margin-bottom: 20px;}
+
+.restorants {margin-bottom: 50px;}
+
+footer {background-color: #262626;
+height: 100%;}
+
+.footer_logo {padding: 40px 0px;}
+
+.footer1 {margin-bottom: 30px;}
+
+hr { margin-top: 0;
+margin-bottom: 25px;
+size: 1px;
+color: #FFFFFF;
+opacity: 0.4;}
+
+.language {background-color: #3B3B3B;
+height: 40px;
+width: 100%;
+position: relative;}
+
+.language img {padding: 12px 16px;}
+
+select {
+width: 70%;
+outline: none;
+position: relative;
+bottom: 14px;
+padding: 10px 0px;
+color: white;
+border: none;
+background-color: #3B3B3B;
+appearance: none;
+background: url(img/Shape.png) 96% / 8% no-repeat #3B3B3B;}
+
+.hashtag {color: #49A144;}
+
+.social p {font-size: 16px;
+margin: 30px 0px 20px 0px;
+color: #FFFFFF;}
+
+.footer2 {margin-bottom: 10px;}
+
+.footer2 p {font-size: 13px;
+    margin-bottom: 20px;
+color: #FFFFFF;}
+
+.footer2 a {text-decoration: none;}
+
+.footer3 {margin-bottom: 10px;}
+
+.footer3 p {font-size: 13px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #FFFFFF;}
+
+.footer3 a {text-decoration: none;}
+
+.row_href {margin-bottom: 50px;}
+
+.download {display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 25px;}
+
+.download .img1 {margin-right: 20px;}
+
+.foot p {color: #FFFFFF;
+font-size: 11px;
+margin-bottom: 15px;}
+
+.rights {padding-bottom: 30px;}
+
+.rights a {text-decoration: none;}
+
+.btn-up {position: fixed;
+bottom: 24px;
+right: 16px;
+transition: 2s;}
+
+@media (max-width: 365px) {
+.language select {width: 60%;}
+.appetizer_card .appetizer_name {max-width: 170px;}
+}
+    
+@media (max-width: 415px) {
+.appetizer_name {max-width: 200px;}
+.appetizer_desctiption {margin-top: 0;}
+}    
+
+/*Extra small screen*/
+@media (max-width: 575px) {
+select {width: 67%;}
+
+.container {
+max-width: 90%;}
+
+.navigation>a {display: none;}
+}
+
+/*Small screen*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+select {width: 78%;}
+
+header .container, .searchbar .container, .restorants .container, footer .container
+{width: 524px;
+max-width: 100%;}
+
+.navigation>a {display: none;}
+}
+
+/*Medium screen*/
+@media (min-width: 768px) and (max-width: 991px) {
+select {width: 64%}
+
+header .container, .searchbar .container, .restorants .container, footer .container 
+{width: 736px;
+max-width: 100%;}
+}
+
+/*Large screen*/
+@media (min-width: 992px) and (max-width: 1199px) {
+select {width: 75%}
+header .container, .searchbar .container, .restorants .container, footer .container 
+{width: 956px;
+max-width: 100%;}
+}
+
+/*Extra Large screen*/
+@media (min-width: 1200px) {
+select {width: 75%}
+header .container, .searchbar .container, .restorants .container, footer .container 
+{width: 1164px;
+max-width: 100%;}
+}
